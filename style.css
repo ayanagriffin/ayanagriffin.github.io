@@ -440,6 +440,20 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     text-align: center;
 }
 
+.contact img {
+  position: absolute;
+  z-index: -1;
+  max-width: 20vw;
+}
+
+#contact1 {
+  left: 0;
+}
+
+#contact2 {
+  right: 0;
+}
+
 .socials {
     display: flex;
     gap: 1rem;
@@ -628,6 +642,10 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
         .nav-links .nav-link{
             display: none;    
           }
+
+        .contact img {
+          max-width: 35vw;
+        }
       }
       
 
