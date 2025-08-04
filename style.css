@@ -687,7 +687,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
   #navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 85vw;
     transition: transform 0.3s ease;
     z-index: 999;
   }
