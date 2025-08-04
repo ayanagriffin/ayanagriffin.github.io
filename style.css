@@ -492,6 +492,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
   padding: 0 var(--navbar-padding-x);
   gap: var(--landing-gap);
   overflow: hidden;
+  margin-top: 3rem;
 }
 .landing-text { flex: 1; }
 
@@ -533,7 +534,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
 .landing-image {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
   min-width: 200px;
   display: flex;
   justify-content: center;
