@@ -658,7 +658,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
   .footer-icons {
     display: flex;
