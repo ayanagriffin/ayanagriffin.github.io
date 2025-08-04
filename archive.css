@@ -53,6 +53,19 @@
     font-weight: 600;
   }
 
+.archive h1 {
+  margin-bottom: 1rem;
+}
+
+.archive p {
+  margin-bottom: 6rem;
+  max-width: 1000px;
+}
+
+.archive .nav-link {
+  font-size: var(--body-text-size);
+  color: var(--blue);
+}
   /* Hide .built-with on screens narrower than 600px */
 @media (max-width: 1200px) {
 
