@@ -487,6 +487,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
   justify-content: flex-start;
   padding: 0 var(--navbar-padding-x);
   gap: var(--landing-gap);
+  overflow: hidden;
 }
 .landing-text { flex: 1; }
 
@@ -636,7 +637,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     text-align: center;
     max-width: 90vw;
   }
-  .landing-image { margin-bottom: 2rem; max-width: 60vw;}
+  .landing-image { margin-bottom: 2rem; max-width: 40vw;}
   .landing-text { width: 100%; }
   .name, .subtitle { font-size: var(--h2-text-size); }
   .name, .subtitle, .caption, .intro-small { max-width: 100%; }
