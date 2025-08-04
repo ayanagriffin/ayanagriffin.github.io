@@ -432,7 +432,13 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
   }
   
 /* === Contact & Socials === */
-.contact { 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+    align-items: center;
+}
+.contact-content { 
     display: flex; 
     flex-direction: column;
     justify-content: center; 
@@ -443,7 +449,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
 .contact img {
   position: absolute;
   z-index: -1;
-  max-width: 20vw;
+  max-width: 30vw;
 }
 
 #contact1 {
@@ -643,9 +649,19 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
             display: none;    
           }
 
-        .contact img {
-          max-width: 35vw;
+        .contact {
+          flex-direction: row;
         }
+        .contact img {
+          position: relative;
+          max-width: 40vw;
+        }
+
+        #contact2 {
+          display: none;
+        }
+
+
       }
       
 
