@@ -19,7 +19,7 @@
   --font-karla: 'Karla', sans-serif;
 
   /* Sizes */
-  --navbar-height: 150px;
+  --navbar-height: 75px;
   --navbar-padding-x: 7.5vw;
   --navbar-padding-y: 3rem;
   --logo-height: 3rem;
@@ -230,6 +230,10 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     transition: var(--transition);
     font-size: var(--nav-link-size);
     font-weight: 300;
+  }
+
+  .nav-resume {
+    padding: 0.5rem 1.25rem;
   }
 
   .nav-link:hover { color: var(--blue); }
