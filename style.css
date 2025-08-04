@@ -25,7 +25,7 @@
   --logo-height: 3rem;
   --nav-link-gap: 4rem;
   --nav-link-size: 0.875rem;
-  --small-btn-padding: 0.75rem 1.75rem;
+  --btn-padding: 0.75rem 1.75rem;
   --small-btn-size: 0.875rem;
   --hero-img-size: 180px;
   --section-padding: 3rem 2rem;
@@ -123,7 +123,7 @@ strong {
     font-weight: 600;
 }
 .small-btn {
-  padding: var(--small-btn-padding);
+  padding: var(--btn-padding);
   font-size: var(--small-btn-size);
   font-weight: 400;
   letter-spacing: 2px;
@@ -152,7 +152,7 @@ button:not(.icon), .btn {
   font-family: var(--font-poppins);
   border: none;
   border-radius: var(--border-radius);
-  padding: 0.875rem 1rem;
+  padding: var(--btn-padding);
   font-size: var(--small-body-text-size);
   font-weight: 600;
   cursor: pointer;
@@ -391,7 +391,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 0 rgba(0,0,0,0);
     transition: transform 0.3s ease, box-shadow 0.5s ease-in-out;
     width: 100%;
-    max-width: 25vw;
+    max-width: 22vw;
     position: relative;   /* ensure transform applies cleanly */
     z-index: 1;           /* prevents clipping by siblings */
   }
