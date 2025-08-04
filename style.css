@@ -22,22 +22,22 @@
   --navbar-height: 150px;
   --navbar-padding-x: 7.5vw;
   --navbar-padding-y: 3rem;
-  --logo-height: 5rem;
+  --logo-height: 3rem;
   --nav-link-gap: 4rem;
-  --nav-link-size: 1.5rem;
+  --nav-link-size: 0.875rem;
   --small-btn-padding: 0.75rem 1.75rem;
-  --small-btn-size: 1.25rem;
+  --small-btn-size: 0.875rem;
   --hero-img-size: 180px;
   --section-padding: 3rem 2rem;
   --landing-gap: 4rem;
   --body-max-width: 85vw;
   --section-height: calc(100vh - var(--navbar-height));
-  --body-text-size: 32px;
-  --small-body-text-size: 24px;
-  --h1-text-size: 88px;
-  --h2-text-size: 54px;
-  --h3-text-size: 48px;
-  --h4-text-size: 32rem;
+  --body-text-size: 1rem;      /* 16px */
+  --small-body-text-size: 0.875rem; /* 14px */
+  --h1-text-size: 3rem;        /* 48px */
+  --h2-text-size: 2.25rem;     /* 36px */
+  --h3-text-size: 1.75rem;     /* 28px */
+  --h4-text-size: 1.25rem;     /* 20px */
   --margin-bottom-section: 10rem;
 
   /* Border & Shadows */
@@ -51,6 +51,24 @@
 
   /* Transition */
   --transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --h1-text-size: 3rem;
+    --h2-text-size: 2.25rem;
+    --h3-text-size: 1.75rem;
+    --h4-text-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --h1-text-size: 3.5rem;
+    --h2-text-size: 2.5rem;
+    --h3-text-size: 2rem;
+    --h4-text-size: 1.75rem;
+  }
 }
 
 /* === Base Styles === */
@@ -134,7 +152,7 @@ button:not(.icon), .btn {
   font-family: var(--font-poppins);
   border: none;
   border-radius: var(--border-radius);
-  padding: 1.25rem 2.5rem;
+  padding: 0.875rem 1rem;
   font-size: var(--small-body-text-size);
   font-weight: 600;
   cursor: pointer;
@@ -576,6 +594,8 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     .about-photos img {
       width: 45%;
     }
+
+
   }
   @media (max-width: 480px) {
     .about-photos img {
@@ -622,6 +642,9 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
   .name, .subtitle, .caption, .intro-small { max-width: 100%; }
   .buttons { justify-content: center; }
   .about { flex-direction: column-reverse;}
+  .about-photos {
+    margin-top: 3rem;
+  }
   
 }
 
