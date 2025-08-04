@@ -32,12 +32,12 @@
   --landing-gap: 4rem;
   --body-max-width: 85vw;
   --section-height: calc(100vh - var(--navbar-height));
-  --body-text-size: 2rem;
-  --small-body-text-size: 1.5rem;
-  --h1-text-size: 5.5rem;
-  --h2-text-size: 4rem;
-  --h3-text-size: 3rem;
-  --h4-text-size: 2.5rem;
+  --body-text-size: 32px;
+  --small-body-text-size: 24px;
+  --h1-text-size: 88px;
+  --h2-text-size: 54px;
+  --h3-text-size: 48px;
+  --h4-text-size: 32rem;
   --margin-bottom-section: 10rem;
 
   /* Border & Shadows */
@@ -135,7 +135,7 @@ button:not(.icon), .btn {
   border: none;
   border-radius: var(--border-radius);
   padding: 1.25rem 2.5rem;
-  font-size: 1.5rem;
+  font-size: var(--small-body-text-size);
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
@@ -618,7 +618,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
   }
   .landing-image { margin-bottom: 2rem; max-width: 60vw;}
   .landing-text { width: 100%; }
-  .name, .subtitle { font-size: 4rem; }
+  .name, .subtitle { font-size: var(--h2-text-size); }
   .name, .subtitle, .caption, .intro-small { max-width: 100%; }
   .buttons { justify-content: center; }
   .about { flex-direction: column-reverse;}
