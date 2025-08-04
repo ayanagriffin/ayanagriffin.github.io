@@ -19,3 +19,28 @@ toggleBtn.addEventListener('click', () => {
   aboutText.classList.toggle('expanded');
   toggleBtn.textContent = aboutText.classList.contains('expanded') ? 'Read Less' : 'Read More';
 });
+
+
+  const navbar = document.getElementById('navbar');
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    const landingHeight = document.querySelector('.landing').offsetHeight;
+
+    // Always show navbar on the landing section
+    if (currentScrollY < landingHeight) {
+      navbar.classList.remove('hide');
+      return;
+    }
+
+    // Hide on scroll down, show on scroll up
+    if (currentScrollY > lastScrollY) {
+      navbar.classList.add('hide');   // scrolling down
+    } else {
+      navbar.classList.remove('hide'); // scrolling up
+    }
+
+    lastScrollY = currentScrollY;
+  });
+
