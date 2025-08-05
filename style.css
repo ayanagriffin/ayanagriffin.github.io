@@ -621,10 +621,6 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
       width: 45%;
     }
 
-    .contact {
-      flex-direction: column;
-    }
-
   }
   @media (max-width: 480px) {
     .about-photos img {
@@ -653,7 +649,7 @@ button:hover, .btn:hover { opacity: 0.9; transform: translateY(-2px); }
           }
 
         .contact {
-          flex-direction: row;
+          flex-direction: column;
         }
         .contact img {
           position: relative;
