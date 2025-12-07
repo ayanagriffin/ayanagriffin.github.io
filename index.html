@@ -1,237 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="./assets/me.png"/>
-  <script defer src="script.js"></script>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar fade-in">
-    <a href="/">
-        <img src="./assets/logo.png" alt="Logo" class="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="./assets/me.png" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar fade-in">
+      <a href="/">
+        <img src="./assets/logo.png" alt="Logo" class="logo" />
       </a>
-          <div class="nav-links">
-    <a href="#about" class="nav-link">About</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
 
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-      <a href="./assets/AyanaGriffin-Resume.pdf" class="nav-resume small-btn">Resumé</a>
-    </div>
-  </nav>
-  
-
-  <!-- Hero -->
-  <section class="section landing fade-in">
-    <div class="landing-text">
-      <p class="intro-small">Hey there, I’m</p>
-      <h1 class="name">Ayana Griffin, a</h1>
-      <h1 class="subtitle">Stanford CS Student</h1>
-      <p class="caption">
-        I’m a graduate student at Stanford studying Computer Science and
-        passionate about designing equitable, beautiful technologies for
-        social impact.
-      </p>
-      <div class="buttons">
-        <a href="#about" class="btn btn-primary">About Me</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="./assets/AyanaGriffin-Resume.pdf" class="nav-resume small-btn"
+          >Resumé</a
+        >
       </div>
-    </div>
-    <div class="landing-image">
-      <img src="./assets/me.png" alt="Photo of Ayana Griffin" />
-    </div>
-  </section>
-  
+    </nav>
+
+    <!-- Hero -->
+    <section class="section landing fade-in">
+      <div class="landing-text">
+        <p class="intro-small">Hey there, I’m</p>
+        <h1 class="name">Ayana Griffin, a</h1>
+        <h1 class="subtitle">Stanford CS Student</h1>
+        <p class="caption">
+          I’m a graduate student at Stanford studying Computer Science and
+          passionate about designing equitable, beautiful technologies for
+          social impact.
+        </p>
+        <div class="buttons">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="landing-image">
+        <img src="./assets/me.png" alt="Photo of Ayana Griffin" />
+      </div>
+    </section>
+
     <!-- About me -->
 
     <section class="about section fade-in" id="about">
-        <div class="about-photos">
-          <img src="./assets/about1.png" alt="Photo 1">
-          <img src="./assets/about2.png" alt="Photo 2">
-          <img src="./assets/about3.png" alt="Photo 3">
+      <div class="about-photos">
+        <img src="./assets/about1.png" alt="Photo 1" />
+        <img src="./assets/about2.png" alt="Photo 2" />
+        <img src="./assets/about3.png" alt="Photo 3" />
+      </div>
+
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <p id="about-text" class="collapsed">
+          Hi, I’m Ayana! I’m a computer science graduate student at Stanford
+          University passionate about building technology that empowers and
+          includes. I did my undergraduate degree in
+          <a class="nav-link" href="https://symsys.stanford.edu/"
+            >Symbolic Systems</a
+          >
+          (Human-centered AI specialization), combining psychology, education,
+          and philosophy with CS. My work today sits at the intersection of
+          education, technology, and equity, designing tools that create
+          meaningful learning experiences for everyone, especially those
+          historically left out of tech spaces.
+
+          <span class="more">
+            <br /><br />
+            Over three summers as a software engineering intern at Microsoft, I
+            worked on AI-powered tools for financial operations and cost
+            analysis, which honed my ability to build at scale while staying
+            rooted in user needs. Beyond work, I thrive on sharing knowledge.
+            Whether teaching coding workshops, mentoring young students through
+            volunteer organizations such as
+            <a href="https://www.wearebgc.org/" class="nav-link"
+              >Black Girls Code</a
+            >, or speaking about the power of representation in STEM, I love
+            sparking curiosity and confidence in others. <br /><br />
+            When I’m not behind my laptop, you’ll probably find me crocheting,
+            caring for my growing collection of succulents, or exploring new
+            corners of the world (I hope to hit all seven continents before
+            turning 30!).
+            <br /><br />
+            At my core, I believe technology should not only solve problems but
+            also connect people and open doors. That vision drives everything I
+            create. See some of my work below!
+          </span>
+        </p>
+        <button id="toggle-btn" class="btn btn-primary">Read More</button>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section fade-in" id="projects">
+      <div class="project-item reverse">
+        <div class="project-image">
+          <img src="./assets/projects/theo.png" alt="Project 2" />
         </div>
-      
-        <div class="about-text">
-          <h2 class="section-title">About Me</h2>
-          <p id="about-text" class="collapsed">
-            Hi, I’m Ayana! I’m a computer science graduate student at Stanford University passionate 
-            about building technology that empowers and includes. I did my undergraduate degree in 
-            <a class="nav-link" href="https://symsys.stanford.edu/">Symbolic Systems</a> (Human-centered AI specialization), combining 
-            psychology, education, and philosophy with CS. My work today sits at the intersection 
-            of education, technology, and equity, designing tools that create meaningful learning 
-            experiences for everyone, especially those historically left out of tech spaces. 
-            
-            <span class="more">
-              <br><br>
-              Over three summers as a software engineering intern at Microsoft, I worked on AI-powered 
-              tools for financial operations and cost analysis, which honed my ability to build at scale 
-              while staying rooted in user needs. Beyond work, I thrive on sharing knowledge. Whether 
-              teaching coding workshops, mentoring young students through volunteer organizations such 
-              as <a href="https://www.wearebgc.org/" class="nav-link">Black Girls Code</a>, or speaking 
-              about the power of representation in STEM, I love sparking curiosity and confidence in others.
-              <br><br>
-              When I’m not behind my laptop, you’ll probably find me crocheting, caring for my growing 
-              collection of succulents, or exploring new corners of the world (I hope to hit all seven 
-              continents before turning 30!).
-              <br><br>
-              At my core, I believe technology should not only solve problems but also connect people 
-              and open doors. That vision drives everything I create. See some of my work below!
-            </span>
+        <div class="project-content">
+          <h3>Theo</h3>
+          <p>
+            Theo is an ADHD-friendly study companion that turns vague goals into
+            clear, timed steps and nudges you with warm check-ins. It keeps you
+            balanced with breaks, reflections, and a supportive tone so progress
+            feels sustainable, not stressful. You can plan, run, and review
+            sessions to see progress over time.
           </p>
-          <button id="toggle-btn" class="btn btn-primary">Read More</button>
+          <p>
+            <strong
+              >Built with React Native, Typescript, Expo, Supabase, Gemini, and
+              Whispr</strong
+            >
+          </p>
+          <a
+            href="https://web.stanford.edu/class/cs147/projects/EmpoweringLearnerswithAI/Theo/"
+            class="small-btn"
+            >View App Website</a
+          >
         </div>
-      </section>
-      
-  
-
-  <!-- Projects -->
-  <section class="projects section fade-in" id="projects">
-  
-    <div class="project-item">
-      <div class="project-image">
-        <img src="./assets/projects/studybud.png" alt="Project 1">
       </div>
-      <div class="project-content">
-        <h3>StudyBud</h3>
+      <div class="project-item">
+        <div class="project-image">
+          <img src="./assets/projects/studybud.png" alt="Project 1" />
+        </div>
+        <div class="project-content">
+          <h3>StudyBud</h3>
+          <p>
+            A research-informed productivity app designed to support women with
+            ADHD in creating sustainable, motivating study routines. Grounded in
+            cognitive science and inclusive design principles, StudyBud
+            integrates AI-generated prompts, personalized encouragement, and
+            flexible work-break cycles to accommodate diverse attention
+            patterns. Available on the App Store soon! The presentation below
+            was given as a guest lecture talk for an accessibility design course
+            at UCSC.
+          </p>
+          <p><strong>Built with React Native, Swift, Figma, and SQL</strong></p>
+
+          <a
+            href="https://docs.google.com/presentation/d/1svePY1qwBBSTfncxDsFM6PyQOHpYDoesrzyHYzCDMdw/edit?usp=sharing"
+            class="small-btn btn-yellow"
+            >View StudyBud Presentation</a
+          >
+        </div>
+      </div>
+
+      <div class="project-item reverse">
+        <div class="project-image">
+          <img src="./assets/projects/c2k.png" alt="Project 2" />
+        </div>
+        <div class="project-content">
+          <h3>Computers2Kids App</h3>
+          <p>
+            A mobile application for Computers2Kids, an organization that has
+            helped over 100k families get access to necessary technology. This
+            app streamlines the process of getting computers to those in need by
+            allowing users to apply for and request tech, tech assistance, and
+            more!
+          </p>
+          <p>
+            <strong
+              >Built with React Native, Node, Express, Heroku, and
+              Salesforce</strong
+            >
+          </p>
+          <a
+            href="https://developforgood.medium.com/computers2kids-a-mobile-application-to-better-enable-low-income-families-to-gain-access-to-c2ks-b0b9e0c173db"
+            class="small-btn"
+            >View App Case Study</a
+          >
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-image">
+          <img src="./assets/projects/showandtell.png" alt="Project 3" />
+        </div>
+        <div class="project-content">
+          <h3>Show & Tell</h3>
+          <p>
+            Show & Tell is an AI-guided platform that helps young children
+            create and share explainer videos with their families. Featuring a
+            friendly AI guide named Cami, it supports kids through planning,
+            recording, and presenting their ideas. Grounded in research on
+            digital play, parasocial learning, and culturally responsive design,
+            Show & Tell fosters creativity, communication skills, and meaningful
+            family connections—making technology a bridge that amplifies
+            children’s voice
+          </p>
+          <p><strong>Design and research project built with Figma</strong></p>
+
+          <a
+            href="https://docs.google.com/presentation/d/1YSXxJpmECIowXvsDa5HFC7QaWIwQhr_lRHx8-ZG78OM/edit?usp=drive_link"
+            class="small-btn btn-yellow"
+            >View Show & Tell Presentation</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- More projects -->
+    <section class="other-projects section" id="other-projects">
+      <h2 class="no-margin-bottom">Other Noteworthy Projects</h2>
+      <a href="./archive.html" class="nav-link margin-bottom"
+        >view the archive</a
+      >
+      <div class="other-projects-grid">
+        <div class="other-card fade-in">
+          <h4>Curate</h4>
+          <p>
+            A research-backed app targeting impulse shopping, grounded in user
+            studies and iterative design, that transforms shopping urges into
+            mindful, goal-oriented board curation.
+          </p>
+          <p><strong>Built with Figma</strong></p>
+          <div class="project-links">
+            <a
+              href="https://highercommonsense.com/cs247b/team-antelope-curate/"
+              class="nav-link"
+              >Project Page</a
+            >
+            <a
+              href="https://www.figma.com/proto/7NeexhpcgEfGK1b1s53pNC/Curate?node-id=55-3&t=pozciYwlTc6S6f1c-1&starting-point-node-id=121%3A782"
+              class="nav-link"
+              >Prototype</a
+            >
+          </div>
+        </div>
+
+        <div class="other-card fade-in">
+          <h4>A New Job</h4>
+          <p>
+            A narrative puzzle game featuring original artwork and an
+            object-based dialogue system, where players navigate quirky office
+            tasks that gradually reveal the unsettling realities of corporate
+            life.
+          </p>
+          <p><strong>Built with GML and original artwork</strong></p>
+          <div class="project-links">
+            <a
+              href="https://mechanicsofmagic.com/2024/06/08/p2-a-new-job/"
+              class="nav-link"
+              >Project Page</a
+            >
+            <a
+              href="https://gx.games/games/j29x0x/a-new-job-2024-/tracks/d77e9589-b605-42e4-bc24-03b3b6e7dc9e/"
+              class="nav-link"
+              >Play Game</a
+            >
+          </div>
+        </div>
+
+        <div class="other-card fade-in">
+          <h4>Swordle</h4>
+          <p>
+            A social word puzzle platform where users play personalized daily
+            word games (like Wordle), compete with friends in real-time
+            leaderboards, and engage in group discussions—all within a single,
+            private community.
+          </p>
+          <p><strong>Built using piggyback prototyping</strong></p>
+          <div class="project-links">
+            <a
+              href="https://docs.google.com/document/d/1zvIn7-_IT0LEX9IuJvMOLNuMauGWzQbXFczlSSm0sWc/edit?usp=sharing"
+              class="nav-link"
+              >Design Summary</a
+            >
+          </div>
+        </div>
+
+        <div class="other-card fade-in">
+          <h4>Microsoft Fabric Exports</h4>
+          <p>
+            An API that enables Azure customers to seamlessly import large-scale
+            usage data into Microsoft Fabric, transforming raw tables into
+            actionable insights for easier analysis.
+          </p>
+          <p>
+            <strong
+              >Built with .NET and C# for my 3rd Microsoft internship</strong
+            >
+          </p>
+          <div class="project-links">
+            <!-- No external links provided -->
+          </div>
+        </div>
+
+        <div class="other-card fade-in">
+          <h4>AI Documentation Templates</h4>
+          <p>
+            A Visual Studio Code extension that streamlines Microsoft
+            documentation by automatically classifying article types and
+            generating guideline-compliant templates from a brief user input.
+          </p>
+          <p>
+            <strong
+              >Built with Node.js and the OpenAI API for my 2nd Microsoft
+              internship</strong
+            >
+          </p>
+          <div class="project-links">
+            <!-- No external links provided -->
+          </div>
+        </div>
+
+        <div class="other-card fade-in">
+          <h4>Actionable Messages Toolkit</h4>
+          <p>
+            A developer toolkit for Microsoft Outlook that introduces actionable
+            messages, showcases their use cases, and provides a starter web app
+            template to streamline building them through the API.
+          </p>
+          <p>
+            <strong
+              >Built with .NET and C# for my 1st Microsoft internship</strong
+            >
+          </p>
+          <div class="project-links">
+            <!-- No external links provided -->
+          </div>
+        </div>
+      </div>
+
+      <a href="./archive.html" class="btn btn-primary">View more projects</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <img
+        src="./assets/contact1.png"
+        alt="contact"
+        class="contact-img"
+        id="contact1"
+      />
+      <img
+        src="./assets/contact2.png"
+        alt="contact"
+        class="contact-img"
+        id="contact2"
+      />
+
+      <div class="contact-content">
+        <h2 class="no-margin-bottom">Contact</h2>
         <p>
-            A research-informed productivity app designed to support women with ADHD in creating sustainable, motivating study routines. Grounded in cognitive science and inclusive design principles, StudyBud integrates AI-generated prompts, personalized encouragement, and flexible work-break cycles to accommodate diverse attention patterns. Available on the App Store soon! The presentation below was given as a guest lecture talk for an accessibility design course at UCSC.
+          I’d love to hear from you! <br />
+          Contact me via LinkedIn and I'll be in touch!
         </p>
-        <p><strong>Built with React Native, Swift, Figma, and SQL</strong></p>
-
-        <a href="https://docs.google.com/presentation/d/1svePY1qwBBSTfncxDsFM6PyQOHpYDoesrzyHYzCDMdw/edit?usp=sharing" class="small-btn btn-yellow">View StudyBud Presentation</a>
+        <div class="socials">
+          <a href="https://linkedin.com/in/ayanagriffin" class="nav-link"
+            >LinkedIn</a
+          >
+        </div>
       </div>
-    </div>
-  
-    <div class="project-item reverse">
-      <div class="project-image">
-        <img src="./assets/projects/c2k.png" alt="Project 2">
-      </div>
-      <div class="project-content">
-        <h3>Computers2Kids App</h3>
-        <p>
-            A mobile application for Computers2Kids, an organization that has helped over 100k families get access to necessary technology. This app streamlines the process of getting computers to those in need by allowing users to apply for and request tech, tech assistance, and more!
-        </p>
-        <p><strong>Built with React Native, Node, Express, Heroku, and Salesforce</strong></p>
-        <a href="https://developforgood.medium.com/computers2kids-a-mobile-application-to-better-enable-low-income-families-to-gain-access-to-c2ks-b0b9e0c173db" class="small-btn">View App Case Study</a>
-      </div>
-    </div>
-  
-    <div class="project-item">
-      <div class="project-image">
-        <img src="./assets/projects/showandtell.png" alt="Project 3">
-      </div>
-      <div class="project-content">
-        <h3>Show & Tell</h3>
-        <p>
-            Show & Tell is an AI-guided platform that helps young children create and share explainer videos with their families. Featuring a friendly AI guide named Cami, it supports kids through planning, recording, and presenting their ideas. Grounded in research on digital play, parasocial learning, and culturally responsive design, Show & Tell fosters creativity, communication skills, and meaningful family connections—making technology a bridge that amplifies children’s voice        </p>
-        <p><strong>Design and research project built with Figma</strong></p>
+    </section>
 
-        <a href="https://docs.google.com/presentation/d/1YSXxJpmECIowXvsDa5HFC7QaWIwQhr_lRHx8-ZG78OM/edit?usp=drive_link" class="small-btn btn-yellow">View Show & Tell Presentation</a>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- More projects -->
-  <section class="other-projects section" id="other-projects">
-    <h2 class="no-margin-bottom">Other Noteworthy Projects</h2>
-    <a href="./archive.html" class="nav-link margin-bottom">view the archive</a>
-    <div class="other-projects-grid">
-        <div class="other-card fade-in">
-            <h4>Curate</h4>
-            <p>A research-backed app targeting impulse shopping, grounded in user studies and iterative design, that transforms shopping urges into mindful, goal-oriented board curation.</p>
-            <p><strong>Built with Figma</strong></p>
-            <div class="project-links">
-                <a href="https://highercommonsense.com/cs247b/team-antelope-curate/" class="nav-link">Project Page</a>
-                <a href="https://www.figma.com/proto/7NeexhpcgEfGK1b1s53pNC/Curate?node-id=55-3&t=pozciYwlTc6S6f1c-1&starting-point-node-id=121%3A782" class="nav-link">Prototype</a>
-            </div>
-        </div>
-        
-        <div class="other-card fade-in">
-            <h4>A New Job</h4>
-            <p>A narrative puzzle game featuring original artwork and an object-based dialogue system, where players navigate quirky office tasks that gradually reveal the unsettling realities of corporate life.</p>
-            <p><strong>Built with GML and original artwork</strong></p>
-            <div class="project-links">
-                <a href="https://mechanicsofmagic.com/2024/06/08/p2-a-new-job/" class="nav-link">Project Page</a>
-                <a href="https://gx.games/games/j29x0x/a-new-job-2024-/tracks/d77e9589-b605-42e4-bc24-03b3b6e7dc9e/" class="nav-link">Play Game</a>
-            </div>
-        </div>
-        
-        <div class="other-card fade-in">
-            <h4>Swordle</h4>
-            <p>A social word puzzle platform where users play personalized daily word games (like Wordle), compete with friends in real-time leaderboards, and engage in group discussions—all within a single, private community.</p>
-            <p><strong>Built using piggyback prototyping</strong></p>
-            <div class="project-links">
-                <a href="https://docs.google.com/document/d/1zvIn7-_IT0LEX9IuJvMOLNuMauGWzQbXFczlSSm0sWc/edit?usp=sharing" class="nav-link">Design Summary</a>
-            </div>
-        </div>
-        
-        <div class="other-card fade-in">
-            <h4>Microsoft Fabric Exports</h4>
-            <p>An API that enables Azure customers to seamlessly import large-scale usage data into Microsoft Fabric, transforming raw tables into actionable insights for easier analysis.</p>
-            <p><strong>Built with .NET and C# for my 3rd Microsoft internship</strong></p>
-            <div class="project-links">
-                <!-- No external links provided -->
-            </div>
-        </div>
-        
-        <div class="other-card fade-in">
-            <h4>AI Documentation Templates</h4>
-            <p>A Visual Studio Code extension that streamlines Microsoft documentation by automatically classifying article types and generating guideline-compliant templates from a brief user input.</p>
-            <p><strong>Built with Node.js and the OpenAI API for my 2nd Microsoft internship</strong></p>
-            <div class="project-links">
-                <!-- No external links provided -->
-            </div>
-        </div>
-        
-        <div class="other-card fade-in">
-            <h4>Actionable Messages Toolkit</h4>
-            <p>A developer toolkit for Microsoft Outlook that introduces actionable messages, showcases their use cases, and provides a starter web app template to streamline building them through the API.</p>
-            <p><strong>Built with .NET and C# for my 1st Microsoft internship</strong></p>
-            <div class="project-links">
-                <!-- No external links provided -->
-            </div>
-        </div>
-        
-    </div>
-
-    <a href="./archive.html" class="btn btn-primary">View more projects</a>
-
-  </section>
-
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <img src="./assets/contact1.png" alt="contact" class="contact-img" id="contact1">
-    <img src="./assets/contact2.png" alt="contact" class="contact-img" id="contact2">
-
-    <div class="contact-content">
-      <h2 class="no-margin-bottom">Contact</h2>
-    <p>I’d love to hear from you! <br> Contact me via LinkedIn and I'll be in touch!</p>
-    <div class="socials">
-      <a href="https://linkedin.com/in/ayanagriffin" class="nav-link">LinkedIn</a>
-    </div>
-  </div>   
-  </section>
-
-  
-  <footer class="footer">
-    <div class="footer-icons">
-    <a href="https://github.com/ayanagriffin" target="_blank" aria-label="GitHub" class="footer-icon">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/ayanagriffin" target="_blank" aria-label="LinkedIn" class="footer-icon">
-        <i class="fa-brands fa-linkedin-in"></i>
+    <footer class="footer">
+      <div class="footer-icons">
+        <a
+          href="https://github.com/ayanagriffin"
+          target="_blank"
+          aria-label="GitHub"
+          class="footer-icon"
+        >
+          <i class="fab fa-github"></i>
         </a>
-    <a href="./assets/AyanaGriffin-Resume.pdf" target="_blank" aria-label="Resume" class="footer-icon">
-        <i class="fa-solid fa-file-lines"></i>
-            </a>
-</div>
-<p>Built by Ayana Griffin | Last updated August 2025</p>
-</footer>
-  
-</body>
+        <a
+          href="https://linkedin.com/in/ayanagriffin"
+          target="_blank"
+          aria-label="LinkedIn"
+          class="footer-icon"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a
+          href="./assets/AyanaGriffin-Resume.pdf"
+          target="_blank"
+          aria-label="Resume"
+          class="footer-icon"
+        >
+          <i class="fa-solid fa-file-lines"></i>
+        </a>
+      </div>
+      <p>Built by Ayana Griffin | Last updated August 2025</p>
+    </footer>
+  </body>
 </html>
