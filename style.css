@@ -288,6 +288,10 @@ button:hover,
   flex-wrap: wrap;
 }
 
+.project-content h3 {
+  margin-top: 0;
+}
+
 /* Reverse layout for alternating sides */
 .project-item.reverse {
   flex-direction: row-reverse;
